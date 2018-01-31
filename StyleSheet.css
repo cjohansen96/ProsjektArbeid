@@ -1,0 +1,83 @@
+body {
+	font-family: 'Work Sans', sans-serif;
+}
+/* Farge på header */
+header {
+	background-color: #333;
+}
+
+
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+  height: 20px;
+}
+
+#container {
+
+}
+/* Hele naven, floater til høyre */
+nav {
+	float: right;
+}
+
+nav ul {
+  	margin-right: 70px;
+  	padding: 0;
+  	list-style: none;
+}
+
+nav li {
+  	display: inline-block; /* Gjør at teksten blir horizontalt */
+  	margin-left: 70px;
+  	padding-top: 23px;
+  	position: relative;
+}
+/* Teksten på navigasjonen */
+nav a {
+  	color: #ffffff;
+  	text-decoration: none; /* Ta vekk strek under tekst */
+  	text-transform: uppercase; /* Gjør tekst til store bokstaver */
+  	font-size: 20px;
+
+}
+/* Endrer farge når du holder over naven */
+nav a:hover {
+	color: #0091f2;
+}
+
+/* Strek når du holder over 
+nav a::before {
+  	content: '';
+  	display: block;
+  	height: 5px;
+  	background-color: #0091f2;
+
+  	position: absolute;
+  	top: 0;
+  	width: 0%;
+	transition: all ease-in-out 250ms;
+}
+*/
+
+nav a:hover::before {
+  	width: 100%;
+}
+
+.logo {
+
+}
+
+/*Box til main content */
+#main {
+
+}
+/* Box til info */
+#info {
+
+}
+/* Footer */
+#footer {
+
+}
