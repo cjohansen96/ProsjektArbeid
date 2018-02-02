@@ -64,7 +64,6 @@ nav a::before {
 nav a:hover::before {
   	width: 100%;
 }
-
 .logo {
   float: left;
   padding-left: 80px;
