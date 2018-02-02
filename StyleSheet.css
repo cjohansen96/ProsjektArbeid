@@ -44,7 +44,7 @@ nav a {
 }
 /* Endrer farge når du holder over naven */
 nav a:hover {
-	color: #0091f2;
+	color: #42e2f4;
 }
 
 /* Strek når du holder over 
@@ -78,14 +78,14 @@ nav a:hover::before {
 }
 
 /*Style and placement for the slogan*/
-#slogan{
+.slogan{
   color: #3f89ff;
   margin-left: 2%;
   margin-top: 2%;
 }
 
 /*Temporary placement for questions*/
-#question{
+.question{
   width: 40%;
   background-color: white;
   margin-top: 5%;
@@ -96,9 +96,15 @@ nav a:hover::before {
 
 /* Box til info */
 #info {
-
+  width: 100%;
+  height: 40%;
+  background-color: #42e2f4;
+  float: left;
 }
 /* Footer */
 #footer {
-
+  width: 100%;
+  height: 40%;
+  background-color: #333;
+  float: left;
 }
