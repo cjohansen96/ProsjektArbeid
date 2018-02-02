@@ -64,11 +64,19 @@ nav a::before {
 nav a:hover::before {
   	width: 100%;
 }
-
 .logo {
-
+  float: left;
+  padding-left: 80px;
+  padding-top: 20px;
+  width: 230px;
+ 
 }
-
+ 
+.aktiv {
+    color: #6bb8ca;
+ 
+}
+ 
 /*Box til main content */
 #main {
   width: 100%;
