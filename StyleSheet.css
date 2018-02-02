@@ -44,7 +44,7 @@ nav a {
 }
 /* Endrer farge når du holder over naven */
 nav a:hover {
-	color: #42e2f4;
+	color: #6bb8ca;
 }
 
 /* Strek når du holder over 
@@ -66,7 +66,13 @@ nav a:hover::before {
 }
 
 .logo {
-
+  float: left;
+  padding-left: 80px;
+  padding-top: 20px;
+  width: 230px;
+}
+.aktiv {
+    color: #6bb8ca;
 }
 
 /*Box til main content */
@@ -98,13 +104,18 @@ nav a:hover::before {
 #info {
   width: 100%;
   height: 40%;
-  background-color: #42e2f4;
+  background-color: #6bb8ca;
   float: left;
 }
 /* Footer */
 #footer {
   width: 100%;
-  height: 40%;
+  height: 400px;
   background-color: #333;
   float: left;
+}
+.footertext {
+  color: #ffffff;
+  text-align: center;
+  margin-top: 300px;
 }
