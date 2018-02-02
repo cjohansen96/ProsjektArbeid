@@ -69,7 +69,7 @@ nav a:hover::before {
   float: left;
   padding-left: 80px;
   padding-top: 20px;
-  width: 230px;
+  width: 180px;
 }
 .aktiv {
     color: #6bb8ca;
