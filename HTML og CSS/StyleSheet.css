@@ -1,9 +1,9 @@
 body {
-	font-family: 'Work Sans', sans-serif;
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 /* Farge på header */
 header {
-	background-color: #333;
+	background-color: #333333;
 }
 
 
@@ -67,9 +67,10 @@ nav a:hover::before {
 
 .logo {
   float: left;
-  padding-left: 80px;
-  padding-top: 20px;
-  width: 180px;
+  padding-left: 13%;
+  padding-top: 1%;
+  width: 9%;
+
 }
 .aktiv {
     color: #6bb8ca;
@@ -93,7 +94,7 @@ nav a:hover::before {
 /*Temporary placement for questions*/
 .question{
   width: 40%;
-  background-color: #333;
+  background-color: #333333;
   margin-top: 5%;
   margin-left:1%;
   margin-bottom: 10%;
@@ -101,7 +102,7 @@ nav a:hover::before {
   border-radius: 25px;
   border: solid #6bb8ca;
 }
-
+/* Text for question tab */
 #qtxt{
   color: #6bb8ca;
   margin-left: 2%;
@@ -114,18 +115,22 @@ nav a:hover::before {
   background-color: #6bb8ca;
   float: left;
 }
+/* Text for info box */
 #infotxt{
-    margin-left: 2%;
+    text-align: center;
+    margin-top: 4%;
+    color: #ffffff;
 }
 /* Footer */
 #footer {
   width: 100%;
   height: 400px;
-  background-color: #333;
+  background-color: #333333;
   float: left;
 }
+/* Text for the footer */         
 .footertext {
   color: #ffffff;
   text-align: center;
-  margin-top: 300px;
+  margin-top: 15%;
 }
