@@ -85,7 +85,7 @@ nav a:hover::before {
 
 /*Style and placement for the slogan*/
 .slogan{
-  color: #3f89ff;
+  color: #6bb8ca;
   margin-left: 2%;
   margin-top: 2%;
 }
@@ -93,11 +93,18 @@ nav a:hover::before {
 /*Temporary placement for questions*/
 .question{
   width: 40%;
-  background-color: white;
+  background-color: #333;
   margin-top: 5%;
-  margin-left:2%;
+  margin-left:1%;
   margin-bottom: 10%;
   float: left;
+  border-radius: 25px;
+  border: solid #6bb8ca;
+}
+
+#qtxt{
+  color: #6bb8ca;
+  margin-left: 2%;
 }
 
 /* Box til info */
@@ -106,6 +113,9 @@ nav a:hover::before {
   height: 40%;
   background-color: #6bb8ca;
   float: left;
+}
+#infotxt{
+    margin-left: 2%;
 }
 /* Footer */
 #footer {
