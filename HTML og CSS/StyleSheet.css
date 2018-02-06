@@ -134,7 +134,9 @@ nav a:hover::before {
   text-align: center;
   margin-top: 15%;
 }
-/*pushes content out towards the middle*/
-.center {
+/*class for form in question page*/
+.qform {
     padding-left: 13%;
+    margin-bottom: 5%;
+    margin-top: 5%; 
 }
