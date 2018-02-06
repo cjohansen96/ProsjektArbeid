@@ -68,8 +68,8 @@ nav a:hover::before {
 .logo {
   float: left;
   padding-left: 13%;
-  padding-top: 1%;
-  width: 9%;
+  padding-top: 1.5%;
+  width: 10%;
 
 }
 .aktiv {
