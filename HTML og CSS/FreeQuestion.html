@@ -20,19 +20,42 @@
 <main id="main">
 	<div class="qform">
 		<form action="/action_page.php">
-		  Name:
+		  Area of Law
 		  <br>
-		  <input type="text" name="name" placeholder="Name">
-		  <br><br>
-		  E-mail:
+			<select>
+			  <option value="select">Select area of law</option>
+			  <option value="contract">Contract law</option>
+			  <option value="company">Company law</option>
+			  <option value="banking">Banking and financial law</option>
+			  <option value="consumer">Consumer protection law</option>
+			  <option value="intellectual">Intellectual property law</option>
+			  <option value="investment">Investment law</option>
+			  <option value="land">Land law</option>
+			  <option value="civil">Civil law</option>
+			  <option value="criminal">Criminal law</option>
+			  <option value="divorce">Marriage and divorce law</option>
+			</select>
+			<br><br>
+		  Subject
 		  <br>
-		  <input type="text" name="email" placeholder="E-mail">
+		  <input type="text" name="subject" placeholder="Enter subject">
 		  <br><br>
 		  How can we help you?
 		  <br>
 		  <textarea name="message" rows="5" cols="40"></textarea>
 		  <br><br>
+		  Contact info
+		  <br><br>
+		  Name
+		  <br>
+		  <input type="text" name="name" placeholder="Enter name">
+		  <br><br>
+		  E-mail
+		  <br>
+		  <input type="text" name="email" placeholder="Enter E-mail">
+		  <br><br>
 		  <input type="submit" value="Send">
+		  <br><br>
 		</form> 
 	</div>
 </main>

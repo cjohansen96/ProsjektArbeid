@@ -67,9 +67,12 @@ nav a:hover::before {
 
 .logo {
   float: left;
-  padding-left: 13%;
-  padding-top: 1.5%;
-  width: 10%;
+  margin-left: 13%;
+  margin-top: 0;
+  width: 20%;
+  height: auto;
+  position: absolute;
+  margin-bottom: 15%;
 
 }
 .aktiv {
@@ -136,7 +139,14 @@ nav a:hover::before {
 }
 /*class for form in question page*/
 .qform {
-    padding-left: 13%;
-    margin-bottom: 5%;
-    margin-top: 5%; 
+  padding: 2%;
+  margin-left: 13%;
+  margin-bottom: 5%;
+  margin-top: 5%;
+  width: 30%;
+  background-color: #333333;
+  float: left;
+  /*border-radius: 25px;*/
+  border: solid white;
+  color: white; 
 }
