@@ -134,3 +134,7 @@ nav a:hover::before {
   text-align: center;
   margin-top: 15%;
 }
+/*pushes content out towards the middle*/
+.center {
+    padding-left: 13%;
+}
