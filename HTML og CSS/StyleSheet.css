@@ -285,3 +285,34 @@ span.psw {
        width: 100%;
     }
 }
+
+
+.wrapperwhite {
+  float: left;
+  position: relative;
+  width: 100%;
+}
+
+
+
+/*--------------------------FORGOTTEN PASSWORD PAGE --------------------------*/
+
+/*class for form in forgotten passwords page*/
+.fform {
+ 
+  background-color: #333333;
+  border: solid black;
+  color: white;
+ position: absolute;
+   top:30%;
+   left:40%;
+   width:300px;
+}
+
+
+
+#forgottenpassword {
+	position: absolute;
+   top:30%;
+   left:40%;
+}
