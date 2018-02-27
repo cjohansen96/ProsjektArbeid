@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WiLegal</title>
+	<link rel="stylesheet" type="text/css" href="StyleSheet.css">
+</head>
+<body>
+	<div id="container">
+	<header>
+			<!--<img src="bilder/test.png" alt="logo" class="logo">--> 
+		  <nav>
+		  	<ul>
+		  	  <li><a href="Home.html">Home</a></li>
+		  	  <li><a href="Lawyers.html">Lawyers</a></li>
+		  	  <li><a class="aktiv" href="Cases.html">Cases</a></li>
+		  	  <li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log in</a></li>
+		  	</ul>
+		  </nav>
+	</header>
+<main>
+	<!-- LOGIN -->
+	<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+      <!--<img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
+    </div>
+
+    <div class="container2">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
+</script>
+
+	<div id="main">
+		<img src="bilder/wrapperhome.png" alt="logo" class="wrapperimg"> 
+
+	</div>
+</main>
+
+	<footer>	<div id="footer">
+		<h4 class="footertext"> &#169; Copyright 2018  - WiLegal | Privacy Policy | Terms and Conditions | Memberships Terms and Conditions </h4>
+	</div>
+	</footer>
+
+</div>
+</body>
+</html>
