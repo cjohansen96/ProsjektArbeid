@@ -1,5 +1,9 @@
 body {
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px
 }
 /* Farge på header */
 header {
@@ -13,8 +17,12 @@ header::after {
   clear: both;
   height: 20px;
 }
-
+/*fixed navbar som følger når man scroller*/
 #container {
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  top: 0%;
 
 }
 /*--------------------------NAV--------------------------*/
