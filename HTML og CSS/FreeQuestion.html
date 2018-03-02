@@ -7,7 +7,6 @@
 <body>
 	<div id="container">
 	<header>
-			<!--<img src="test.png" alt="logo" class="logo">--> 
 		  <nav>
 		  	<ul>
 		  	  <li><a href="Home.html">Home</a></li>
@@ -25,7 +24,6 @@
   <form class="modal-content animate" action="/action_page.php">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
-      <!--<img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
     </div>
 
     <div class="container2">
@@ -61,10 +59,10 @@ window.onclick = function(event) {
 </script>
 
 	<div id="main">
-	<img src="bilder/wrapperquest.png" alt="logo" class="wrapperimg"> 
+	<img src="bilder/wrapperquest.png" alt="logo" class="wrapperimgext"> 
 	<div class="qform">
-		<form action="/action_page.php">
-		  Area of Law
+		<form method="post" action="mailto:example@example.com">
+		  Select area of law
 		  <br>
 			<select>
 			  <option value="select">Select area of law</option>
@@ -88,7 +86,7 @@ window.onclick = function(event) {
 		  <br>
 		  <textarea name="message" rows="5" cols="40"></textarea>
 		  <br><br>
-		  Contact info
+		  Your contact information
 		  <br><br>
 		  Name
 		  <br>
