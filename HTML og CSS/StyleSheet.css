@@ -17,7 +17,7 @@ header::after {
   height: 20px;
 }
 /*fixed navbar som følger når man scroller*/
-#container {
+#navcontainer {
   position: fixed;
   z-index: 99;
   width: 100%;
@@ -28,7 +28,8 @@ header::after {
 
 /* Hele naven, floater til høyre */
 nav {
-	float: right;
+margin-right:25%;
+float: right;
 }
 
 nav ul {
@@ -79,17 +80,20 @@ nav a:hover::before {
   padding-left: 13%;
   padding-top: 1.5%;
   width: 13%;
-  position: absolute;*/
-
+  position: absolute;
 }
+*/
 .aktiv {
     color: #6bb8ca;
 }
 /*--------------------------HOME--------------------------*/
+main{
+  margin-right: 20%;
+  margin-left: 20%;
+}
 
 .wrapperimg {
   float: left;
-  position: relative;
   width: 100%;
 }
 
@@ -128,13 +132,15 @@ nav a:hover::before {
 
 /* Box til info */
 #info {
-  width: 100%;
-  height: 40%;
+  width: 54%;
+  height: 400px;
   background-color: #6bb8ca;
   float: left;
+  margin-right: 20%;
+  margin-left: 20%;
 }
 /* Text for info box */
-#infotxt{
+.infotxt{
     text-align: center;
     margin-top: 4%;
     color: #ffffff;
@@ -142,15 +148,17 @@ nav a:hover::before {
 /* Footer */
 #footer {
   width: 100%;
-  height: 400px;
+  height: 7%;
   background-color: #333333;
-  float: left;
+  margin-top: 1%;
+  bottom:0%;
+  position: fixed;
+  z-index: 99;
 }
 /* Text for the footer */         
 .footertext {
   color: #ffffff;
   text-align: center;
-  margin-top: 15%;
 }
 
 /*--------------------------QUESTION PAGE--------------------------*/
@@ -329,4 +337,113 @@ span.psw {
 	position: absolute;
    top:30%;
    left:40%;
+}
+
+/* Style the horizontal ruler */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+
+/*--------------------------PICTURE SLIDER--------------------------*/
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  margin-top: 10%;
+
+  width: 90%;
+  height: 20%;
+  position: relative;
+}
+.sliderimg{
+  width: 100%;
+  height: 400px;
+}
+
+/* Hide the images by default */
+.mySlides {
+    display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor:pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }

@@ -7,24 +7,24 @@
 <body>
 	<div id="container">
 	<header>
-			<!--<img src="bilder/test.png" alt="logo" class="logo">--> 
 		  <nav>
 		  	<ul>
-		  	  <li><a class="aktiv" href="Home.html">Home</a></li>
+		  	  <li><a href="Home.html">Home</a></li>
 		  	  <li><a href="Lawyers.html">Lawyers</a></li>
 		  	  <li><a href="Cases.html">Cases</a></li>
 		  	  <li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log in</a></li>
+		  	  <li><a href="Signup.html">Sign up</a></li>
 		  	</ul>
 		  </nav>
 	</header>
+</div>
 <main>
-	<!-- LOGIN -->
+		<!-- LOGIN -->
 	<div id="id01" class="modal">
   
   <form class="modal-content animate" action="/action_page.php">
     <div class="imgcontainer">
       <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
-      <!--<img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
     </div>
 
     <div class="container2">
@@ -42,7 +42,7 @@
 
     <div class="container" style="background-color:#f1f1f1">
       <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-      <span class="psw">Forgot <a href="forgotpassword.html">password?</a></span>
+      <span class="psw">Forgot <a href="#">password?</a></span>
     </div>
   </form>
 </div>
@@ -59,27 +59,27 @@ window.onclick = function(event) {
 }
 </script>
 
-		<img src="bilder/wrapperwhite.png" alt="wrapper" class="wrapperwhite"> 
+	<div id="main">
+	<img src="bilder/wrapperquest.png" alt="logo" class="wrapperimgext"> 
+	<div class="signupform">
+		<a href="Usersignup.html">
+		<div class="signupform2">
+			<h4>Sign up for users</h4>
 		</div>
-	
-		<div id="forgottenpassword">
-				<div class="fform">
-			
-
-					<label for="email"><b> Forgotten password? </b>
-		<input type="text" placeholder="Enter email adress" name="email" required>
-	<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Send me my password</button>
-	</label>
-</div>
-</div>
-	</a>
+		</a>
+		<a href="Lawyersignup.html">
+		<div class="signupform2">
+			<h4>Sign up for lawyers</h4>
+		</div>
+		</a>
 	</div>
+	</div>
+  </div>	
 </main>
-	<footer>	<div id="footer">
-		<h4 class="footertext"> &#169; Copyright 2018  - WiLegal | Privacy Policy | Terms and Conditions | Memberships Terms and Conditions | <a href="envelop.jpeg"></a>WiLegal@mail.com</h4>
+<footer>	
+	<div id="footer">
+		<h4 class="footertext"> &#169; Copyright 2018  - WiLegal | Privacy Policy | Terms and Conditions | Memberships Terms and Conditions | WiLegal@examplemail.com</h4>
 	</div>
-	</footer>
-
-</div>
+</footer>
 </body>
 </html>
