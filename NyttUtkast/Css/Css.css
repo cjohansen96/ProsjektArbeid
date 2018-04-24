@@ -146,45 +146,6 @@ nav {
   .sliderimg {
     margin-top:100px;
   }
-  .signup {
-  left: 30%;
-  top:40%;
-
-.tekstbot {
-
-  margin-left: 15%;
-
-.trebilder{
-
-margin-top:-5%;
-left:30%;
-}
-
-.tretekst {
-
-margin-top:5%;
-margin-left:30%;
-position: absolute;
-word-spacing: 90px
-}
-
-.footercont {
-
-width:100%;
-height:200px;
-top:200px;
-}
-
-.listone{
-list-style-type: none;
-color:#bababa;
-margin-left: 3%;
-}
-
-.listone h2 {
-color:#525252;
-}
-
 }
 
 /* ------------------ CSS UNDER JQUERY ---------------- */
@@ -638,42 +599,42 @@ border-radius: 3px 0 0 3px;
 
 /*-----------------------Sign up posisjonering------------*    NY */ 
 .signup {
-  /* left: 30%;
-  top:40%; */ 
+  left: 30%;
+  top:40%;
   position: absolute;
     display:block;
 }
 /*-----------------------Bilder og tekst under slider-----------------   NY */
 .tekstbot {
 
-  /* margin-left: 15%;  */
+  margin-left: 15%;
 }
 .trebilder{
   position: absolute;
 display: inline-block;
-/* margin-top:-5%;
-left:30%; */
+margin-top:-5%;
+left:30%;
 }
 .tretekst {
 display: inline-block;
-/* margin-top:5%;
+margin-top:5%;
 margin-left:30%;
 position: absolute;
-word-spacing: 90px */
-}	
+word-spacing: 90px
+}
 /*--------------------Footer---------------  NY  */
 .footercont {
 position: relative;
 background-color: #282828;
-/* width:100%;
+width:100%;
 height:200px;
-top:200px; */
+top:200px;
 }
 .listone{
 list-style-type: none;
 color:#bababa;
-/* margin-left: 3%; */
+margin-left: 3%;
 }
 .listone h2 {
-/* color:#525252;       */
+color:#525252;
 }
