@@ -2,27 +2,43 @@
 <html>
 <head>
   <title>WiLegal</title>
+  <link rel="stylesheet" type="text/css" href="StyleSheet.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="Js/Javascript.js"></script>
   <script src="Js/Dropdown.js"></script>
   <link rel="stylesheet" type="text/css" href="css/Css.css">
+
 </head>
 <body>
-	<div id="navcontainer">
-	<header>
-			<!--<img src="bilder/test.png" alt="logo" class="logo">--> 
-		  <nav>
-		  	<ul>
-		  	  <li><a  href="Home.html">Home</a></li>
-		  	  <li><a href="Lawyers.html">Lawyers</a></li>
-		  	  <li><a class="aktiv" href="Cases.html">Cases</a></li>
-		  	  <li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log in</a></li>
-		  	  <li><a onclick="document.getElementById('id02').style.display='block'">Sign Up</a></li>
-		  	</ul>
-		  </nav>
-	</header>
-	</div>
-<main>
+
+
+  
+    <header>
+
+       <div id="navcontainer">
+               <img src="bilder/test2.png" alt="logo" class="logo"> 
+      <nav>
+        <ul>
+          <li><a href="Home.html">Home</a></li>
+          <li><a href="Lawyers.html">Lawyers</a></li>
+          <li><a class="aktiv" href="Cases.html">Cases</a></li>
+          <li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log in</a></li>
+          <li><a onclick="document.getElementById('id02').style.display='block'">Sign Up</a></li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+  <!-- Dropdown menu for mobiles -->
+  <div class="dropdown">
+    <button onclick="myFunction()" class="dropbtn">=</button>
+    <div id="myDropdown" class="dropdown-content">
+      <li><a href="Home.html">Home</a></li>
+      <li><a href="Lawyers.html">Lawyers</a></li>
+      <li><a class="aktiv" href="Cases.html">Cases</a></li>
+      <li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log in</a></li>
+      <li><a onclick="document.getElementById('id02').style.display='block'">Sign Up</a></li>
+    </div>
+  </div>
 	<!-- LOGIN -->
 	<div id="id01" class="modal">
   
@@ -105,16 +121,29 @@ window.onclick = function(event) {
 }
 </script>
 
-	<div id="main">
-		<img src="bilder/wrapperhome.png" alt="logo" class="wrapperimg"> 
 
-	</div>
 </main>
-
-	<footer>	<div id="footer">
-		<h4 class="footertext"> &#169; Copyright 2018  - WiLegal | Privacy Policy | Terms and Conditions | Memberships Terms and Conditions </h4>
-	</div>
-	</footer>
-
+<p> hei </p>
 </body>
+
+
+
+
+
+  <footer class="footercont">
+    <div class="footercont">
+      <div class="listone">
+        <h2> Quick Links </h2>
+        <li>
+          <ul>
+            <li><a href="aboutus.html">> About us</a></li>
+            <p>> Site 1 </p>
+            <p>> Site 2 </p>
+          </ul>
+        </li>
+      </div>
+      </footer>
+
+
+
 </html>
