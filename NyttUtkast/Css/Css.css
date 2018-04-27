@@ -292,10 +292,10 @@ main{
   color: #ffffff;
 }
 
-#footer { /* Footer */
-  width: 100%;
+/* #footer { /* Footer */
+/*  width: 100%;
   /* height: 7%; */ 
-  background-color: #333333;
+/*  background-color: #333333;
   margin-top: 1%;
   bottom:0%;
   position: fixed;
@@ -303,7 +303,7 @@ main{
 }
 
 #footertext { /* Text for the footer */  
-  color: #ffffff;
+/*  color: #ffffff;
   text-align: center;
 }
 
@@ -312,6 +312,7 @@ main{
   text-align: center;
   font-size:12px;
 }
+*/
 
 /*--------------------------QUESTION PAGE--------------------------*/
 
@@ -646,18 +647,129 @@ color:grey;
   color:lightblue;
 }
 /*--------------------Footer---------------  NY  */
-.footercont {
-position: relative;
+
+
+footer {
+border-top: grey solid 1px;
+position: relative;  
+clear:both;
 background-color: #282828;
 width:100%;
-height:200px;
-top:200px;
+height:395px;
+margin-top:10%; 
 }
 .listone{
 list-style-type: none;
-color:#bababa;
+color:grey; 
 margin-left: 3%;
+float:left;
+margin-top:20px;
 }
-.listone h2 {
+
+.listone li {
+  color:#bababa;
+}
+
+.listtwo{
+list-style-type: none;
+/* color:#bababa; */
+margin-left: 10%;
+float:left;
+border-right: 2px solid grey;
+padding-right:20%;
+margin-top:20px;
+}
+
+.listtwo li {
+  color:#bababa;
+}
+
+.listtwo{
+color:grey;
+}
+
+}
+.listone {
 color:#525252;
+}
+
+.Footer3 {
+  margin-top: 20px;
+  float:left;
+  margin-left: 3%;
+  width:30%;
+}
+
+.Footer3 p {
+  color:grey;
+  font-size: 20px;
+}
+
+.Signup {
+  width:30%;
+  height:50px;
+  float:rigth;
+  color:lightblue;
+  background-color:grey;
+  border-radius:5%;
+}
+
+input {
+  background-color:grey;
+  border-style:none;
+  width:50%;
+  height:50px;
+  border-radius: 5%;
+  color:white;
+}
+
+hr {
+  clear:both;
+  height:0px;
+  width:98%;
+  color:grey;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: grey;
+  color: white;
+}
+
+.fa-linkedin {
+  background: grey;
+  color: white;
+}
+
+.fa-twitter {
+  background: grey;
+  color: white;
+}
+
+.fa-pinterest {
+  background: grey;
+  color: white;
+}
+
+.fa-rss {
+  background: grey;
+  color: white;
+}
+
+#Copyright {
+  margin-left:3%;
+  color:grey;
 }
