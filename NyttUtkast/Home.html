@@ -2,12 +2,11 @@
 <html>
 <head>
 	<title>WiLegal</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" type="text/css" href="StyleSheet.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<script src="Js/Javascript.js"></script>
 	<script src="Js/Dropdown.js"></script>
 	<link rel="stylesheet" type="text/css" href="css/Css.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 <body>
@@ -15,19 +14,20 @@
 	<body onload="showSlides()">
 
 		<header>
-			<p class="overheader"> Mail: info:domain.com </p>
-			<img src="bilder/test2.png" alt="logo" class="logo"> 
-			<div id="navcontainer">
-				<nav>
-					<ul>
-						<li><a class="aktiv" href="Home.html">Home</a></li>
-						<li><a href="Lawyers.html">Lawyers</a></li>
-						<li><a href="Cases.html">Cases</a></li>
-						<li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log in</a></li>
-						<li><a onclick="document.getElementById('id02').style.display='block'">Sign Up</a></li>
-					</ul>
-				</nav>
-			</header>
+
+			 <img src="bilder/test2.png" alt="logo" class="logo"> 
+			 	<div id="navcontainer">
+			<nav>
+				<ul>
+					<li><a href="Home.html" class="aktiv">Home</a></li>
+					<li><a href="aboutus.html">About us</a></li>
+					<li><a href="Lawyers.html">Lawyers</a></li>
+					<li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log in</a></li>
+					<li><a onclick="document.getElementById('id02').style.display='block'">Sign Up</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
 		</div>
 		<!-- Dropdown menu for mobiles -->
 		<div class="dropdown">
@@ -111,20 +111,17 @@
 			<div class="slideshow-container">
 
 				<!-- Full-width images with number and caption text -->
-				<div class="mySlides fade">
-					<div class="numbertext">1 / 3</div>
-					<img src="bilder/qualified.png" class="sliderimg" alt="qualified">
+				<div class="mySlides">
+					<img src="bilder/headerlul.png" class="sliderimg" alt="qualified">
 					<div class="text">Caption Text</div>
 				</div>
 
-				<div class="mySlides fade">
-					<div class="numbertext">2 / 3</div>
-					<img src="bilder/wrapperhome.png" class="sliderimg" alt="wrapper">
+				<div class="mySlides">
+					<img src="bilder/freeq.png" class="sliderimg" alt="wrapper">
 					<div class="text">Caption Two</div>
 				</div>
 
-				<div class="mySlides fade">
-					<div class="numbertext">3 / 3</div>
+				<div class="mySlides">
 					<img src="bilder/lawyer.jpg" class="sliderimg" alt="lawyer">
 					<div class="text">Caption Three</div>
 				</div>
@@ -135,47 +132,42 @@
 			</div>
 			<br>
 
-			<!-- The dots/circles -->
-			<div class="dots">
-				<span class="dot" onclick="currentSlide(1)"></span> 
-				<span class="dot" onclick="currentSlide(2)"></span> 
-				<span class="dot" onclick="currentSlide(3)"></span> 
-			</div>
+			<p class="Slogan"> Get trusted advices after clicks </p>
 
-			<img src="bilder/lawyer.jpg" class="picture1" alt="qualified">
+			<!-- script type="text/javascript">
+				/* automatisk slideshow*/
+				var slideIndex = 0;
+				carousel();
 
-
-
+				function carousel() {
+   				var i;
+    			var x = document.getElementsByClassName("mySlides");
+    				for (i = 0; i < x.length; i++) {
+    				  x[i].style.display = "none"; 
+   				 }
+    				slideIndex++;
+    				if (slideIndex > x.length) {slideIndex = 1} 
+   				 x[slideIndex-1].style.display = "block"; 
+   				 setTimeout(carousel, 4000); // Change image every 2 seconds
+}
+			</script>  -->
 		</main>
 
-<!--	<div id="info">
-		<h1 class=infotxt> #WiLegal </h1>
-		<p class="infotxt"> Its a site where you can get legal help ONLINE, 24/7 any day of the week.</p>
-	</div> -->
-
-
-
-	<div class="tekstbot">
-		<h2> Our Vision </h2>
-		<p> We are making the platform to <br> 
-			become the best partner to both LSPs <br>
-			and clients who live or invest in Vietnam. <br>
-			Customers could get the trusted advices <br>
-			and stable relationship with LSPs through our <br>
-			platform. The LSPs could develop their customer<br>
-			network and approach them in the new way, not <br>
-			just in person. We believe that all of us have <br>
-			the benefit with this platform. 
-		</p>
-
+<div class="tekstbilde">
+	
+	<div class="trebilder">
+	<img src="bilder/ratus.png" alt="rate us" class="trebilder1"> <!-- hspace="250" -->
+	<img src="bilder/free.png" alt="free" class="trebilder2"> <!--  hspace="500"  -->
+	<img src="bilder/qua.png" alt=qualified class="trebilder3">
 	</div>
+	<div class="tretekst">
+	<p class="tretekst1"> Qualified and educated <!--<br> <a href="url">link text ></a>--></p>
+	<p class="tretekst2"> Rate us, give us your opinion <!--<br> <a href="url">link text >--></a> </p> 
+	<p class="tretekst3"> Ask a free question <!--<br> <a href="url">link text ></a>--> </p>
+	</div>
+</div>
 
-	<img src="bilder/ratus.png" alt="rate us" class="trebilder" hspace="250">
-	<img src="bilder/free.png" alt="free" class="trebilder" hspace="500">
-	<img src="bilder/qua.png" alt=qualified class="trebilder">
-	<p class="tretekst"  style="left: 15.5cm"> Qualified and educated <br> <a href="url">link text ></a></p>
-	<p class="tretekst"  style="left: 22cm"> Rate us, give us your opinion <br> <a href="url">link text ></a> </p> 
-	<p class="tretekst"  style="left: 29cm""> ask a free question <br> <a href="url">link text ></a> </p>
+<a href="freequestion.html"></a>
 
 </body>
 <footer>
@@ -221,7 +213,7 @@
 	<button class="Signup"> SIGN UP </button>
 </div>
 	<hr>
-	<p id="Copyright">  Copyright c 2018 - All Rights Reserved - Domain Name </p>
+	<p id="Copyright">  Copyright &#169; 2018 - All Rights Reserved - Wilegal </p>
 	</footer>
 
 

@@ -160,13 +160,6 @@ body {
   margin-top: 4%;
 }
 
-.overheader {
-  color: darkgrey;
-  background-color:grey;
-  width:100%;
-  padding-top:20px;
-}
-
 header {
   background-color:white;
   /* background-color: #333333; */
@@ -187,7 +180,7 @@ header::after {
   z-index: 99;
   width: 100%; 
   top: 0%;
-  background-color:grey;
+  background-color: #282828;
 }
 
 
@@ -195,34 +188,41 @@ header::after {
 /*--------------------------NAV--------------------------*/
 
 nav {   /* Hele naven, floater til høyre */
-  margin-left:20%;  
+/*  margin-left:20%;  
 /*  float: right; */
-  width:100%;
-  background-color:grey; 
+ /* width:100%; */
+ /* background-color:#282828; */
   height:2%;
+
+
 }
 
 nav ul {
   /* margin-right: 70px;  */
   padding: 0;
   list-style: none;
+  /* margin-left: 12%; */ 
+  height: 70px;
+  /*width:100%; */
+  text-align:center;
 }
 
 nav li {
   display: inline-block; /* Gjør at teksten blir horizontalt */
   margin-left: 70px;
-  padding-top: 23px;
-  position: relative;
+  padding-top: 30px;
+/*  position: relative; */
 }
 
 nav a {   /* Teksten på navigasjonen */
   color: #ffffff;
   text-decoration: none; /* Ta vekk strek under tekst */
   text-transform: uppercase; /* Gjør tekst til store bokstaver */
-  font-size: 28px;   
+  font-size: 20px;
+
 }
 
-nav a:hover {   /* Endrer farge når du holder over naven */
+nav a:hover {   /* Endrer farge når du holder ove naven */
   color: #6bb8ca;
 }
 
@@ -230,9 +230,14 @@ nav a:hover::before {
   width: 100%;
 }
 
-.logo {   /* NY */ 
-  margin-top: 3%;
-  margin-left: 35%;
+.logo {   /* NY */
+  margin-left:auto;
+  margin-right:auto; 
+  display:block;
+  margin-top: -3%;
+  max-width:100%;
+  margin-bottom:2%;
+  /*margin-left: 37%; */
   background-color: white; 
 }
 
@@ -272,11 +277,6 @@ main{
   position: absolute;
 }
 
-#qtxt{  /* Text for question tab */
-  color: #ffffff;
-  text-align: center;
-}
-
 #info {  /* Box til info */
   width: 54%;
   height: 400px;
@@ -313,29 +313,45 @@ main{
   font-size:12px;
 }
 */
-
 /*--------------------------QUESTION PAGE--------------------------*/
-
-.wrapperimgext { /*class for form in question page*/
-  float: left;
-  position: relative;
-  width: 100%;
-  height: 1080px;
-}
-
 .qform {
   padding: 2%;
-  margin-left: 13%;
-  margin-bottom: 5%;
-  margin-top: 8%;
+  margin-left: 0%;
+  margin-bottom: 6%;
+  margin-top: 6%;
   width: 30%;
-  background-color: #333333;
+  background-color: #b3e1ef;
+  color: #525252;
   float: left;
-  border: solid white;
-  color: white;
-  position: absolute; 
 }
 
+.questionleft {
+  margin-left: 1.5%;
+  margin-top: 6%;
+  width: 68.5%;
+  height: 633px;
+  background-color: #b3e1ef;
+  float: left;
+}
+
+.qH1 {
+  text-align: center;
+  color: #525252;
+  font-weight: 100;
+}
+
+.qtxt {
+  text-align: center;
+  color: #525252;
+}
+
+.questionpic {
+  position: relative;
+  margin-right: 0%; 
+  margin-bottom: -4%;  
+  width: 100%;
+  height: auto;
+}
 
 /*--------------------------LOGIN------------------------------ */
 
@@ -473,19 +489,19 @@ hr {  /* Style the horizontal ruler */
 
 /*--------------------------PICTURE SLIDER--------------------------*/
 
-.slideshow-container { /* Slideshow container */
-  margin-top: 10%;
-  width: 90%;
-  height: 20%;
-  position: relative; 
-  clear:both;
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin-right: 0%;   
+  width: 100%;
+  height: auto;
 }
 
-.sliderimg{
+.sliderimg {
   width: 100%;
-  height: 400px;
-  border-width:20px;
-  margin:20px;
+  height: 340px;
+  border-width:2px;
+  margin:0px;
   border-color:black;
   border-style:solid;
 }
@@ -506,6 +522,7 @@ hr {  /* Style the horizontal ruler */
   font-size: 18px;
   transition: 0.6s ease;
   border-radius: 0 3px 3px 0;
+  margin-left: 35px;
 }
 
 .next { /* Position the "next button" to the right */
@@ -626,28 +643,121 @@ border-radius: 3px 0 0 3px;
     display:block;
 }
 /*-----------------------Bilder og tekst under slider-----------------   NY */
-.tekstbot {
+.tekstbilde {
+  display:block; 
+  height:550px;
+  width:25%;
+  margin-left:auto;
+  margin-right:auto; 
+}
 
-  margin-left: 5%;
+
+.tekstbot {
+ /* margin-left: 5%; */
   color:grey;
 }
-.trebilder{
-  position: absolute;
-display: inline-block;
-margin-top:-5%;
-left:30%;
-}
-.tretekst {
-display: inline-block;
-margin-top:5%;
-position: absolute;
-color:grey;
-}
-.tretekst a {
-  color:lightblue;
-}
-/*--------------------Footer---------------  NY  */
 
+.trebilder {
+  width:100%;
+  /*display:block; */
+  /*margin-left:auto;
+  margin-right:auto; */
+  
+}
+
+.tretekst {
+
+}
+
+.trebilder1{
+/* float:left; */
+/* position: absolute;
+display: inline-block; */
+ /*margin-top:;
+left: 42.4%; */
+/*display:block;
+margin-left:auto;
+margin-right:auto; */
+}
+
+.trebilder2 {
+
+}
+
+.trebilder3 {
+
+}
+
+}
+
+.tretekst1 {
+/*display: inline-block;
+margin-top:7.8%;
+position: absolute;
+color: #525252;
+margin-left:11.8%; */
+}
+
+.tretekst2 {
+
+}
+
+.tretekst3 {
+
+}
+
+/*.tretekst a {
+  color:lightblue;
+} */
+
+/*--------------------AboutUs---------------  NY  */
+.mission {
+ width: 100%;
+ height: 300px;
+ background-color: #b3e1ef; 
+}
+
+.aboutH1 {
+  text-align: center;
+  color: #525252;
+  padding-top: 4%;
+  font-weight: 100;
+}
+
+.missionTxt {
+  text-align: center;
+  color: #525252;
+}
+
+.aboutus {
+ width: 100%;
+ height: 300px;
+ background-color: #b3e1ef; 
+}
+
+.aboutTxt {
+  color: #525252;
+  padding-left: 50px;
+  padding-right: 50px;
+  line-height: 1.5; 
+}
+
+.ourvision {
+ width: 100%;
+ height: 210px;
+ background-color: #b3e1ef; 
+}
+
+.aboutpic {
+  position: relative;
+  margin-right: 0%;   
+  width: 100%;
+  height: auto;
+
+}
+
+
+/*--------------------Footer---------------  NY  */
 
 footer {
 border-top: grey solid 1px;
@@ -656,7 +766,7 @@ clear:both;
 background-color: #282828;
 width:100%;
 height:395px;
-margin-top:10%; 
+margin-top:16%; 
 }
 .listone{
 list-style-type: none;
@@ -714,7 +824,7 @@ color:#525252;
   border-radius:5%;
 }
 
-input {
+.Footer3 input  {
   background-color:grey;
   border-style:none;
   width:50%;
@@ -770,6 +880,17 @@ hr {
 }
 
 #Copyright {
-  margin-left:3%;
+  margin-left:38%;
   color:grey;
+  bottom: -2.5%;
+  position: absolute;
+}
+
+.Slogan {
+  font-size:40px;
+  color:lightblue;
+  /* background-color:green; */
+  text-align:center;
+  margin-bottom:8%;
+  width:100%;
 }
