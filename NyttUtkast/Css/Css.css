@@ -4,59 +4,102 @@
 
 @media screen and (max-width: 641px) {
 
-  #info {
 
+  .aboutuscontainer {
+    font-size:0.4em;
   }
 
-  #footer {
-    height:65px;
+  .freequestioncontainer {
+    font-size:0.8em;
+    width:100%;
   }
 
-  .dots {
+  .freequestioncontainer .questionleft {
     display:none;
   }
 
-  .tekstbot {
+  .freequestioncontainer .qform {
+    width:100%;
+    overflow:hidden;  
+  }
+
+  .freequestioncontainer textarea {
+    width:100%;
+  }
+
+  #Lawyerslink {
     display:none;
   }
 
-  .trebilder {
+  #Copyright2 {
+    text-align:center;
+    color:grey;
+    margin-top:10%;
+    font-size:10px;
+  }
+
+  footer .footercont, footer .listtwo {
     display:none;
   }
 
-  .tretekst {
-    display:none;
+  #Copyright {
+    display:inline;
   }
 
-  .footercont {
-    display:none;
-  }
-  .listone {
-    display:none;
-  }
-  .listtwo {
-    display:none;
-  }
-
-  .picture1 {
-    height:4%;
-    width: 90%;
-    /* width:173px; */
-    clear:both;
-    margin-top:50px;
-    margin-right:000px;
-  }
-
-  span.psw {
-   display: block;
-   float: none;
+  .Footer3 {
+   display:none;
  }
 
- .cancelbtn {
-   width: 100%;
- }
+ footer {
+  display:none;
+}
 
- nav {
+
+.dots {
+  display:none;
+}
+
+.tekstbot {
+  display:none;
+}
+
+.trebilder {
+  display:none;
+}
+
+.tretekst p,  .tretekst a {
+  font-size:16px;
+}
+
+.footercont {
+  display:none;
+}
+.listone {
+  display:none;
+}
+.listtwo {
+  display:none;
+}
+
+.picture1 {
+  height:4%;
+  width: 90%;
+  /* width:173px; */
+  clear:both;
+  margin-top:50px;
+  margin-right:000px;
+}
+
+span.psw {
+ display: block;
+ float: none;
+}
+
+.cancelbtn {
+ width: 100%;
+}
+
+nav {
   display:none;
 }
 
@@ -68,17 +111,36 @@
   display:none;
 }
 
-.modal-content {
-  width:80%;
+.sliderimg {
+  height:auto;
+  width:auto;
 }
 
-.sliderimg {
+.prev, .next {
   display:none;
 }
+
+.Slogan {
+  display:block;
+}
+
+
 
 }
 
 @media screen and (min-width: 641px) and (max-width: 1016px) {
+
+  .aboutuscontainer {
+    font-size:0.8em;
+  }
+
+  .tablet {
+    display:none;
+  }
+
+  #Copyright2 {
+    display:none;
+  }
 
   .dropdown {
     list-style:none;
@@ -103,55 +165,91 @@
 nav {
   display:none;
 }
- .tekstbot {
-    display:none;
+.tekstbot {
+  display:none;
+}
+
+.trebilder {
+  display:none;
+}
+
+.tretekst {
+ /* display:none; */
+}
+
+.Footer3 {
+  display:inline;
+  width:100%;
+}
+
+.footercont {
+  display:none;
+}
+.listone {
+  display:none;
+}
+.listtwo {
+  display:none;
+}
+
+.freequestioncontainer textarea {
+  width:100%;
+}
+
+.freequestioncontainer select {
+  width:100%;
+}
+
+
+}
+
+@media screen and (min-width: 1016px) and (max-width: 1200px) {
+  .aboutuscontainer {
+    font-size: 0.8em;
   }
 
-  .trebilder {
-    display:none;
+  .freequestioncontainer textarea {
+    width:100%;
   }
 
-  .tretekst {
-    display:none;
+  .freequestioncontainer select {
+    width:100%;
   }
 
-  .footercont {
-    display:none;
-  }
-  .listone {
-    display:none;
-  }
-  .listtwo {
-    display:none;
-  }
+
 }
 
 @media screen and (min-width: 1016px) {
 
-  .dropbtn {
-    display:none;
-  }
+ #Copyright2 {
+  display:none;
+}
 
-  .picture1 {
-    display:none;
-  }
+.dropbtn {
+  display:none;
+}
 
-  #footertextalt {
-    display:none;
-  }
+.picture1 {
+  display:none;
+}
 
-  .modal-content{
-    width:30%;
-  }
-  .sliderimg {
-    margin-top:100px;
-  }
-  .text {
-    display:none;
-  }
+#footertextalt {
+  display:none;
+}
+
+.modal-content{
+  width:30%;
+}
+.sliderimg {
+  margin-top:100px;
+}
+.text {
+  display:none;
+}
 }
 
 /* ------------------ CSS UNDER JQUERY ---------------- */
+
 
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -159,6 +257,8 @@ body {
   margin-left: 0px;
   margin-top: 4%;
 }
+
+
 
 header {
   background-color:white;
@@ -176,11 +276,14 @@ header::after {
 }
 
 #navcontainer {     /*fixed navbar som følger når man scroller*/
- /*  position: fixed; */
   z-index: 99;
   width: 100%; 
   top: 0%;
   background-color: #282828;
+}
+
+.nextandpreviouslawyer .prev,.next {
+  display:none;
 }
 
 
@@ -188,22 +291,15 @@ header::after {
 /*--------------------------NAV--------------------------*/
 
 nav {   /* Hele naven, floater til høyre */
-/*  margin-left:20%;  
-/*  float: right; */
- /* width:100%; */
- /* background-color:#282828; */
   height:2%;
 
 
 }
 
 nav ul {
-  /* margin-right: 70px;  */
   padding: 0;
   list-style: none;
-  /* margin-left: 12%; */ 
   height: 70px;
-  /*width:100%; */
   text-align:center;
 }
 
@@ -211,7 +307,6 @@ nav li {
   display: inline-block; /* Gjør at teksten blir horizontalt */
   margin-left: 70px;
   padding-top: 30px;
-/*  position: relative; */
 }
 
 nav a {   /* Teksten på navigasjonen */
@@ -237,7 +332,6 @@ nav a:hover::before {
   margin-top: -3%;
   max-width:100%;
   margin-bottom:2%;
-  /*margin-left: 37%; */
   background-color: white; 
 }
 
@@ -292,27 +386,7 @@ main{
   color: #ffffff;
 }
 
-/* #footer { /* Footer */
-/*  width: 100%;
-  /* height: 7%; */ 
-/*  background-color: #333333;
-  margin-top: 1%;
-  bottom:0%;
-  position: fixed;
-  z-index: 99;
-}
 
-#footertext { /* Text for the footer */  
-/*  color: #ffffff;
-  text-align: center;
-}
-
-#footertextalt {
-  color: #ffffff;
-  text-align: center;
-  font-size:12px;
-}
-*/
 /*--------------------------QUESTION PAGE--------------------------*/
 .qform {
   padding: 2%;
@@ -424,7 +498,6 @@ span.psw {
   background-color: #fefefe;
   margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
   border: 1px solid #888;
-  /* width: 80%; */ /* Could be more or less, depending on screen size */
   margin-top:100px;
 }
 
@@ -491,15 +564,13 @@ hr {  /* Style the horizontal ruler */
 
 /* Slideshow container */
 .slideshow-container {
-  position: relative;
-  margin-right: 0%; 
-  width: 100%;
+  position: relative; 
   height: auto;
 }
 
 .sliderimg {
   width: 100%;
-  height: 340px;
+  height: auto;
   border-width:2px;
   margin:0px;
   border-color:black;
@@ -640,7 +711,7 @@ border-radius: 3px 0 0 3px;
   left: 30%;
   top:40%;
   position: absolute;
-    display:block;
+  display:block;
 }
 /*-----------------------Bilder og tekst under slider-----------------   NY */
 .tekstbilde {
@@ -652,7 +723,6 @@ border-radius: 3px 0 0 3px;
 
 
 .tekstbot {
- /* margin-left: 5%; */
   color:grey;
 }
 
@@ -664,63 +734,21 @@ border-radius: 3px 0 0 3px;
   
 }
 
-.tretekst {
-
-}
-
 .test {
   display: flex;
   justify-content: center;
 
-
-}
-
-.trebilder1{
-
-
-
-/* position: absolute;
-display: inline-block; */
- /*margin-top:;
-left: 42.4%; */
-/*display:block;
-margin-left:auto;
-margin-right:auto; */
-}
-
-.trebilder2 {
-
-}
-
-.trebilder3 {
-
-
-}
-
-}
-
-.tretekst1 {
-/*display: inline-block;
-margin-top:7.8%;
-position: absolute;
-color: #525252;
-margin-left:11.8%; */
-}
-
-.tretekst2 {
-
 }
 
 .tretekst3 {
-color:lightblue;
-text-align:center;
-font-size:35px;
-margin-top:5%; 
-font-size:40px;
+  color:lightblue;
+  text-align:center;
+  font-size:35px;
+  margin-top:5%; 
+  font-size:40px;
   color:lightblue;
   display:block;
   text-decoration:none;
-  /* background-color:green; */
   text-align:center;
   margin-bottom:8%;
   margin-top:8%;
@@ -735,10 +763,6 @@ font-size:40px;
   background-color:lightblue;
   color:white;
 }
-
-/*.tretekst a {
-  color:lightblue;
-} */
 
 /*--------------------AboutUs---------------  NY  */
 .mission {
@@ -786,24 +810,39 @@ font-size:40px;
 
 }
 
+.Slogan.lawyers {
+  padding:3%;
+}
+
 
 /*--------------------Footer---------------  NY  */
 
 footer {
-border-top: grey solid 1px;
-position: relative;  
-clear:both;
-background-color: #282828;
-width:100%;
-height:395px;
-margin-top:16%; 
+  border-top: grey solid 1px;
+  position: relative;  
+  clear:both;
+  background-color: #282828;
+  width:100%;
+  height:395px;
+  margin-top:16%; 
 }
 .listone{
-list-style-type: none;
-color:grey; 
-margin-left: 3%;
-float:left;
-margin-top:20px;
+  list-style-type:none;
+  color:grey; 
+  margin-left: 3%;
+  float:left;
+  margin-top:20px;
+  display:block;
+}
+
+.listone a{
+  list-style-type:none;
+  color:#bababa; 
+  text-decoration:none;
+}
+
+.listone li a:hover{
+  color:lightblue;
 }
 
 .listone li {
@@ -811,13 +850,12 @@ margin-top:20px;
 }
 
 .listtwo{
-list-style-type: none;
-/* color:#bababa; */
-margin-left: 10%;
-float:left;
-border-right: 2px solid grey;
-padding-right:20%;
-margin-top:20px;
+  list-style-type: none;
+  margin-left: 10%;
+  float:left;
+  border-right: 2px solid grey;
+  padding-right:10%;
+  margin-top:20px;
 }
 
 .listtwo li {
@@ -825,12 +863,12 @@ margin-top:20px;
 }
 
 .listtwo{
-color:grey;
+  color:grey;
 }
 
 }
 .listone {
-color:#525252;
+  color:#525252;
 }
 
 .Footer3 {
@@ -881,7 +919,7 @@ hr {
 }
 
 .fa:hover {
-    opacity: 0.7;
+  opacity: 0.7;
 }
 
 .fa-facebook {
@@ -920,7 +958,6 @@ hr {
   font-size:40px;
   color:white;
   background-color:lightblue;
-  /* background-color:green; */
   text-align:center;
   margin-bottom:8%;
   margin-top:8%;
@@ -929,13 +966,4 @@ hr {
   margin-right:auto;
   padding:10px;
   box-shadow: 0.1px 0.8px 0.1px 0.8px lightgrey;
-
 }
-
-/*.background {
-  border:solid black 1px;
-  height:500px;
-  /* display:block; */
-/*  white-space:normal;
-}
-*/

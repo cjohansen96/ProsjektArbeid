@@ -15,157 +15,158 @@
 
 		<header>
 
-			 <img src="bilder/test2.png" alt="logo" class="logo"> 
-			 	<div id="navcontainer">
-			<nav>
-				<ul>
-					<li><a href="Home.html">Home</a></li>
-					<li><a href="aboutus.html">About us</a></li>
-					<li><a href="Lawyers.html">Lawyers</a></li>
-					<li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log in</a></li>
-					<li><a onclick="document.getElementById('id02').style.display='block'">Sign Up</a></li>
-				</ul>
-			</nav>
-		</header>
-	</div>
+			<img src="bilder/test2.png" alt="logo" class="logo"> 
+			<div id="navcontainer">
+				<nav>
+					<ul>
+						<li><a href="Home.html">Home</a></li>
+						<li><a href="aboutus.html">About us</a></li>
+						<li><a href="Lawyers.html">Lawyers</a></li>
+						<li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log in</a></li>
+						<li><a onclick="document.getElementById('id02').style.display='block'">Sign Up</a></li>
+					</ul>
+				</nav>
+			</header>
 		</div>
-		<!-- Dropdown menu for mobiles -->
-		<div class="dropdown">
-			<button onclick="myFunction()" class="dropbtn">=</button>
-			<div id="myDropdown" class="dropdown-content">
-				<li><a class="aktiv" href="Home.html">Home</a></li>
-				<li><a href="Lawyers.html">Lawyers</a></li>
-				<li><a href="Cases.html">Cases</a></li>
-				<li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log in</a></li>
-				<li><a onclick="document.getElementById('id02').style.display='block'">Sign Up</a></li>
+	</div>
+	<!-- Dropdown menu for mobiles -->
+	<div class="dropdown">
+		<button onclick="myFunction()" class="dropbtn">=</button>
+		<div id="myDropdown" class="dropdown-content">
+			<li><a class="aktiv" href="Home.html">Home</a></li>
+			<li id="Lawyerslink"><a href="Lawyers.html">Lawyers</a></li>
+			<li><a href="aboutus.html">About us</a></li> 
+			<li><a onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Log in</a></li>
+			<li><a onclick="document.getElementById('id02').style.display='block'">Sign Up</a></li>
+		</div>
+	</div>
+
+	<main>
+		<!-- LOGIN -->
+		<div id="id01" class="modal">
+
+			<form class="modal-content animate" action="/action_page.php">
+				<div class="imgcontainer">
+					<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
+					<!--<img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
+				</div>
+
+				<div class="container2">
+					<label for="uname"><b>Username</b></label>
+					<input type="text" placeholder="Enter Username" name="uname" required>
+
+					<label for="psw"><b>Password</b></label>
+					<input type="password" placeholder="Enter Password" name="psw" required>
+
+					<button type="submit">Login</button>
+					<label>
+						<input type="checkbox" checked="checked" name="remember"> Remember me
+					</label>
+				</div>
+
+				<div class="container" style="background-color:#f1f1f1">
+					<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+					<span class="psw">Forgot <a href="#">password?</a></span>
+				</div>
+			</form>
+		</div>
+
+		<!-- The Modal (btncontains the Sign Up form) -->
+		<div id="id02" class="modal">
+			<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">times;</span>
+			<form class="modal-content" action="/action_page.php">
+				<div class="container2">
+					<h1>Sign Up</h1>
+					<p>Please fill in this form to create an account.</p>
+					<hr>
+					<label for="Firstname"><b>First name</b></label>
+					<input type="text" placeholder="Enter first name" name="firstname" required>
+
+					<label for="Lastname"><b>Last name</b></label>
+					<input type="text" placeholder="Enter last name" name="lastname" required>
+
+					<label for="email"><b>Email</b></label>
+					<input type="text" placeholder="Enter Email" name="email" required>
+
+					<label for="psw"><b>Password</b></label>
+					<input type="password" placeholder="Enter Password" name="psw" required>
+
+					<label for="psw-repeat"><b>Repeat Password</b></label>
+					<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+
+					<label for="certnum"><b>Certificate number *if you're a certified lawyer</b></label>
+					<input type="text" placeholder="Enter certificate number" name="certnum" required>
+
+					<button type="submit" class="signupbtn">Sign Up</button>
+
+					<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+				</div>
+				<div class="container" style="background-color:#f1f1f1">
+					<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+				</div>
+			</form>
+		</div>
+		<div class="freequestioncontainer">
+			<img src="bilder/askq.png" alt="askq" class="questionpic"> 
+			<div class="qform">
+				<form method="post" action="mailto:example@example.com">
+					Select area of law
+					<br>
+					<select>
+						<option value="select">Select area of law</option>
+						<option value="contract">Contract law</option>
+						<option value="company">Company law</option>
+						<option value="banking">Banking and financial law</option>
+						<option value="consumer">Consumer protection law</option>
+						<option value="intellectual">Intellectual property law</option>
+						<option value="investment">Investment law</option>
+						<option value="land">Land law</option>
+						<option value="civil">Civil law</option>
+						<option value="criminal">Criminal law</option>
+						<option value="divorce">Marriage and divorce law</option>
+					</select>
+					<br><br>
+					Subject
+					<br>
+					<input type="text" name="subject" placeholder="Enter subject">
+					<br><br>
+					How can we help you?
+					<br>
+					<textarea name="message" rows="5" cols="40"></textarea>
+					<br><br>
+					Your contact information
+					<br><br>
+					Name
+					<br>
+					<input type="text" name="name" placeholder="Enter name">
+					<br><br>
+					E-mail
+					<br>
+					<input type="text" name="email" placeholder="Enter E-mail">
+					<br><br>
+					<input type="submit" value="Send">
+					<br><br>
+				</form> 
+			</div>
+			<div class="questionleft">
+				<h1 class="qH1"> Welcome to Wilegal Answers </h1>
+				<p class="qtxt"> The best place to ask and answer question about law with Wilegal <br> 
+					If you are a new user to Unity Answers, check out our FAQ for more information. <br>
+					Remember to…
+					Keep your question relevant to this space.
+					Make sure you've selected the correct space to post your question. This way your question is most likely to be answered.
+				</p>
+				<h1 class="qH1">Remember to...</h1>
+				<hr width="600">
+				<h3 class="qH1" style="font-weight: 400">Be polite.</h3>
+				<p class="qtxt">
+					Typing questions and comments in all caps and using unnecessary punctuation (!!1! / ???) will not increase the likelihood of your question being answered.
+				</p>
+
 			</div>
 		</div>
 
-		<main>
-			<!-- LOGIN -->
-			<div id="id01" class="modal">
-
-				<form class="modal-content animate" action="/action_page.php">
-					<div class="imgcontainer">
-						<span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close">&times;</span>
-						<!--<img src="img_avatar2.png" alt="Avatar" class="avatar"> -->
-					</div>
-
-					<div class="container2">
-						<label for="uname"><b>Username</b></label>
-						<input type="text" placeholder="Enter Username" name="uname" required>
-
-						<label for="psw"><b>Password</b></label>
-						<input type="password" placeholder="Enter Password" name="psw" required>
-
-						<button type="submit">Login</button>
-						<label>
-							<input type="checkbox" checked="checked" name="remember"> Remember me
-						</label>
-					</div>
-
-					<div class="container" style="background-color:#f1f1f1">
-						<button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
-						<span class="psw">Forgot <a href="#">password?</a></span>
-					</div>
-				</form>
-			</div>
-
-			<!-- The Modal (btncontains the Sign Up form) -->
-			<div id="id02" class="modal">
-				<span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">times;</span>
-				<form class="modal-content" action="/action_page.php">
-					<div class="container2">
-						<h1>Sign Up</h1>
-						<p>Please fill in this form to create an account.</p>
-						<hr>
-						<label for="Firstname"><b>First name</b></label>
-						<input type="text" placeholder="Enter first name" name="firstname" required>
-
-						<label for="Lastname"><b>Last name</b></label>
-						<input type="text" placeholder="Enter last name" name="lastname" required>
-
-						<label for="email"><b>Email</b></label>
-						<input type="text" placeholder="Enter Email" name="email" required>
-
-						<label for="psw"><b>Password</b></label>
-						<input type="password" placeholder="Enter Password" name="psw" required>
-
-						<label for="psw-repeat"><b>Repeat Password</b></label>
-						<input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-
-						<label for="certnum"><b>Certificate number *if you're a certified lawyer</b></label>
-						<input type="text" placeholder="Enter certificate number" name="certnum" required>
-
-						<button type="submit" class="signupbtn">Sign Up</button>
-
-						<p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-					</div>
-					<div class="container" style="background-color:#f1f1f1">
-						<button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
-					</div>
-				</form>
-			</div>
-
-	<img src="bilder/askq.png" alt="askq" class="questionpic"> 
-	<div class="qform">
-		<form method="post" action="mailto:example@example.com">
-		  Select area of law
-		  <br>
-			<select>
-			  <option value="select">Select area of law</option>
-			  <option value="contract">Contract law</option>
-			  <option value="company">Company law</option>
-			  <option value="banking">Banking and financial law</option>
-			  <option value="consumer">Consumer protection law</option>
-			  <option value="intellectual">Intellectual property law</option>
-			  <option value="investment">Investment law</option>
-			  <option value="land">Land law</option>
-			  <option value="civil">Civil law</option>
-			  <option value="criminal">Criminal law</option>
-			  <option value="divorce">Marriage and divorce law</option>
-			</select>
-			<br><br>
-		  Subject
-		  <br>
-		  <input type="text" name="subject" placeholder="Enter subject">
-		  <br><br>
-		  How can we help you?
-		  <br>
-		  <textarea name="message" rows="5" cols="40"></textarea>
-		  <br><br>
-		  Your contact information
-		  <br><br>
-		  Name
-		  <br>
-		  <input type="text" name="name" placeholder="Enter name">
-		  <br><br>
-		  E-mail
-		  <br>
-		  <input type="text" name="email" placeholder="Enter E-mail">
-		  <br><br>
-		  <input type="submit" value="Send">
-		  <br><br>
-		</form> 
-	</div>
-	<div class="questionleft">
-		<h1 class="qH1"> Welcome to Wilegal Answers </h1>
-		<p class="qtxt"> The best place to ask and answer question about law with Wilegal <br> 
-			If you are a new user to Unity Answers, check out our FAQ for more information. <br>
-			Remember to…
-			Keep your question relevant to this space.
-			Make sure you've selected the correct space to post your question. This way your question is most likely to be answered.
-		</p>
-		<h1 class="qH1">Remember to...</h1>
-		<hr width="600">
-		<h3 class="qH1" style="font-weight: 400">Be polite.</h3>
-		<p class="qtxt">
-			Typing questions and comments in all caps and using unnecessary punctuation (!!1! / ???) will not increase the likelihood of your question being answered.
-		</p>
-
-	</div>
-
-</main>
+	</main>
 
 
 </body>
@@ -175,45 +176,45 @@
 			<h2> Quick Links </h2>
 			<li>
 				<ul>
-					<p> Homepage </p>
-					<p> Contact Us </p>
-					<p> Sitemap </p>
-					<p> Privacy Policy </p>
-					<p> Terms of Use </p>
-					<p> Copyright Information </p>
-					<p> Website Matters </p>
+					<p><a href="home.html">Homepage</a></p> 
+					<p><a href="freequestion.html"> Contact Us</a></p> 
+					<p><a href="#"> Sitemap</a> </p> 
+					<p><a href="#"> Privacy Policy</a> </p> 
+					<p><a href="#"> Terms of Use</a> </p> 
+					<p><a href="#"> Copyright Information</a> </p> 
+					<p><a href="#"> Website Matters</a> </p> 
 				</ul>
 			</li>
-			</div>
-			<div class="listtwo">
+		</div>
+		<div class="listtwo">
 			<h2> How To Find Us </h2>
 			<li>
 				<ul>
-				<p> Address Line 1 </p>
-				<p> Address Line 2 </p>
-				<p> Town/City </p>
-				<p> Postcode/Zip </p>
-				<p>              </p>
-				<p> Tel: xxxx xxxx xxxxxx </p>
-				<p> Email: contact@domain.com </p>
+					<p> Address Line 1 </p>
+					<p> Address Line 2 </p>
+					<p> Town/City </p>
+					<p> Postcode/Zip </p>
+					<p> Tel: xxxx xxxx xxxxxx </p>
+					<p> Email: contact@domain.com </p>
 				</ul>
 			</li>
 		</div>
 	</div>
-<div class="Footer3">
-	<p> Connect With Us </p>
-		<a href="#" class="fa fa-facebook"></a> 
-		<a href="#" class="fa fa-linkedin"></a>
-		<a href="#" class="fa fa-twitter"></a>
-		<a href="#" class="fa fa-pinterest"></a>
-		<a href="#" class="fa fa-rss"></a>
-	<p> Subscribe To Our Newsletter </p>
-	<input value="  Enter your email here:">  
-	<button class="Signup"> SIGN UP </button>
-</div>
+	<p id="Copyright2">  Copyright &#169; 2018 - All Rights Reserved - Wilegal </p>
+	<div class="Footer3">
+		<p> Connect With Us </p>
+		<a href="https://www.facebook.com" class="fa fa-facebook"></a> 
+		<a href="https://www.linkedin.com" class="fa fa-linkedin"></a>
+		<a href="https://www.twitter.com" class="fa fa-twitter"></a>
+		<a href="https://www.pinterest.com" class="fa fa-pinterest"></a>
+		<a href="https://www.wilegal/rss.com" class="fa fa-rss"></a>
+		<p> Subscribe To Our Newsletter </p>
+		<input value="  Enter your email here:">  
+		<button class="Signup"> SIGN UP </button>
+	</div>
 	<hr>
 	<p id="Copyright">  Copyright &#169; 2018 - All Rights Reserved - Wilegal </p>
-	</footer>
+</footer>
 
 
-	</html>
+</html>
