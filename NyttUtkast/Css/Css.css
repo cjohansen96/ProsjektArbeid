@@ -492,7 +492,7 @@ hr {  /* Style the horizontal ruler */
 /* Slideshow container */
 .slideshow-container {
   position: relative;
-  margin-right: 0%;   
+  margin-right: 0%; 
   width: 100%;
   height: auto;
 }
@@ -646,9 +646,8 @@ border-radius: 3px 0 0 3px;
 .tekstbilde {
   display:block; 
   height:550px;
-  width:25%;
-  margin-left:auto;
-  margin-right:auto; 
+  width:100%;
+  margin:auto;
 }
 
 
@@ -658,10 +657,10 @@ border-radius: 3px 0 0 3px;
 }
 
 .trebilder {
-  width:100%;
-  /*display:block; */
-  /*margin-left:auto;
-  margin-right:auto; */
+  width:50%;
+  height:250px;
+  display:block; 
+  margin:auto;
   
 }
 
@@ -669,8 +668,17 @@ border-radius: 3px 0 0 3px;
 
 }
 
+.test {
+  display: flex;
+  justify-content: center;
+
+
+}
+
 .trebilder1{
-/* float:left; */
+
+
+
 /* position: absolute;
 display: inline-block; */
  /*margin-top:;
@@ -685,6 +693,7 @@ margin-right:auto; */
 }
 
 .trebilder3 {
+
 
 }
 
@@ -703,7 +712,28 @@ margin-left:11.8%; */
 }
 
 .tretekst3 {
+color:lightblue;
+text-align:center;
+font-size:35px;
+margin-top:5%; 
+font-size:40px;
+  color:lightblue;
+  display:block;
+  text-decoration:none;
+  /* background-color:green; */
+  text-align:center;
+  margin-bottom:8%;
+  margin-top:8%;
+  width:50%;
+  margin-left:auto;
+  margin-right:auto;
+  padding:10px;
+  box-shadow: 0.1px 0.8px 0.1px 0.8px lightgrey;
+}
 
+.tretekst3:hover {
+  background-color:lightblue;
+  color:white;
 }
 
 /*.tretekst a {
@@ -888,9 +918,24 @@ hr {
 
 .Slogan {
   font-size:40px;
-  color:lightblue;
+  color:white;
+  background-color:lightblue;
   /* background-color:green; */
   text-align:center;
   margin-bottom:8%;
-  width:100%;
+  margin-top:8%;
+  width:50%;
+  margin-left:auto;
+  margin-right:auto;
+  padding:10px;
+  box-shadow: 0.1px 0.8px 0.1px 0.8px lightgrey;
+
 }
+
+/*.background {
+  border:solid black 1px;
+  height:500px;
+  /* display:block; */
+/*  white-space:normal;
+}
+*/
